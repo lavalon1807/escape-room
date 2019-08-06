@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/global.less"],"names":[],"mappings":"AAAA,I,CACE,U,CACA,oB","file":"style.min.css","sourcesContent":["body {\n  color: yellow;\n  background-color: red;\n}\n"]}
