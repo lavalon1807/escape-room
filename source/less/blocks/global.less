@@ -1,4 +1,35 @@
 body {
-  color: yellow;
-  background-color: red;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500px;
+  color: #ffffff;
+  background-color: #000000;
+  min-width: 360px;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    min-width: 1366px;
+    margin: 0 auto;
+  }
 }

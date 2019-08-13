@@ -2,63 +2,64 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главное позорище</title>
+    <meta name="viewport" content="widht=decide-width, initial-scale=1">
+    <title>Квест Ритуал</title>
     <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" crossoring="anonymous">
     <link rel="preload" href="fonts/Raleway-Medium.woff2" as="font">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__load-nav">
-          <div class="page-header__logo">
-            <img src="img/logo-group.svg" width="134" height="50" alt="Основной логотип">
-          </div>
-          <button class="page-header__toggle" type="button">Меню</button>
-        </div>
-        <div class="main-nav__wrapper">
-          <nav class="main-nav">
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item">
-                <a href="choose-city.html">Новосибирск</a>
-              </li>
-              <li class="user-list__item">
-                8 (383) 284 01 60
-              </li>
-            </ul>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="quest-selection.html">Квесты</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Новичкам</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Отзывы</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Акции</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="img/logo-group.svg" width="134" height="50" alt="Основной логотип">
+        </a>
+      </div>
+      <div class="main-nav__wrapper">
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item--choose">
+              <a href="quest-selection.html">Квесты</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Новичкам</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Отзывы</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="choose-city.html">Новосибирск</a>
+            </li>
+            <li class="user-list__item">
+              8 (383) 284 01 60
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <main class="page-main">
-      <h1 class="visually-hidden">Главная страница Escape-Room</h1>
-      <section class="stats">
-        <div class="stats-header">
-          <h2 class="stats-header__title">Лучшие квесты в Новосибирске</h2>
-          <p class="stats-header__intro">Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!</p>
-          <a class="choose-kvest__button button" href="quest-selection.html">
-            Выбрать квест
-          </a>
+    <main class="page-main__ritual ritual">
+      <section class="ritual__wrapper">
+        <div class="ritual__info">
+          <p class="ritual__stats">хоррор, мистика</p>
+          <h2 class="ritual__title">Ритуал</h2>
+          <ul class="ritual__list">
+            <li class="ritual__item">60 мин</li>
+            <li class="ritual__item">3-5 чел</li>
+            <li class="ritual__item">высокая сложность</li>
+          </ul>
+          <p>Тяжелый воздух угнетает, в ночи вы оказыватесь запертыми в сыром помещении вместе с другими ничего не понимающими жертвами. Сквозь щель в двери вы видите, как некто в капюшоне готовит площадку как будто для проведения мистического обряда. Удастся ли вам выбраться, пока вы не станете жертвой ритуала?</p>
+          <a class="reservation__button button" href="#">Забронировать</a>
         </div>
       </section>
     </main>
