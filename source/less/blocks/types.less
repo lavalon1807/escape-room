@@ -1,0 +1,24 @@
+.types__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.types__item {
+  width: 328px;
+  outline: 1px solid green;
+}
+
+@media (min-width: @desktop-width) {
+  .types__list{
+    width: 1080px;
+  }
+
+  .types__item {
+    width: 344px;
+    margin-right: 24px;
+  }
+
+  .types__item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
