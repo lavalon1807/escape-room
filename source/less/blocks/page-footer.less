@@ -4,12 +4,19 @@
   padding: 0 16px;
   display: flex;
   justify-content: space-between;
-  outline: 1px solid red;
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer__wrapper {
+  .page-footer {
+    position: fixed;
+    bottom: 24px;
     width: 1302px;
-    padding: 0 32px;
+    padding: 0;
+    margin: 0;
+  }
+  .page-footer__wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    padding: 0;
   }
 }

@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/lavalon1807/escape-room#readme",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "minify-js": "0.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
