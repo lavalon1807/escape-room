@@ -1,9 +1,41 @@
+.user-list {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.user-list li {
+  margin-bottom: 19px;
+}
+
+.user-list__link {
+  color: #f2890f;
+  padding-left: 24px;
+  font-size: 15px;
+}
+
+.user-list__link::before {
+  content: "";
+  position: absolute;
+  left: 132px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/navigation-map.svg") no-repeat 0 0;
+}
+
+.user-list__phone {
+  font-size: 16px;
+  padding-bottom: 18px;
+}
+
 @media (min-width: @desktop-width) {
   .user-list {
     display: flex;
     justify-content: space-between;
     width: 260px;
     order: 2;
+  }
+
+  .user-list__link::before {
+    display: none;
   }
 
   .user-list__link {
