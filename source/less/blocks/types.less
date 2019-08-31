@@ -1,24 +1,254 @@
 .types__list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  background: linear-gradient(0.18deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%);
 }
+
+.types__shadow {
+  width: 328px;
+  height: 232px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(0.18deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%);
+}
+
+// .ggg {
+//   // position: relative;
+// }
+
+// .types__shadow--maniak {
+//   top: 265px;
+// }
+
+// .types__shadow--ritual {
+//   top: 512px;
+// }
+
+// .types__shadow--wisper {
+//   top: 760px;
+// }
+
+// .types__shadow--old-house {
+//   top: 1008px;
+// }
+
+// .types__shadow--forest {
+//   top: 1256px;
+// }
+
+// .types__shadow--experiment {
+//   top: 1504px;
+// }
+
+// .types__shadow--metro {
+//   top: 1752px;
+// }
+
+// .types__shadow--old-top {
+//   top: 2000px;
+// }
+
+// .types__shadow--last-rubes {
+//   top: 2248px;
+// }
+
+// .types__shadow--mars {
+//   top: 2496px;
+// }
+
+// .types__list img {
+//   margin-top: 16px;
+// }
 
 .types__item {
   width: 328px;
-  outline: 1px solid green;
+  margin-top: 14px;
+  height: 232px;
+}
+
+.types__all-info {
+  padding-left: 20px;
+  padding-top: 16px;
+}
+
+.types__all-phones {
+  position: absolute;
+}
+
+// .types__pictures {
+//   position: absolute;
+// }
+
+.types__title--nohit {
+  padding-top: 28px;
+}
+
+.types__title--small-width {
+  width: 250px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+// .types__item--maniak {
+//   position: absolute;
+//   top: 250px;
+// }
+
+// .types__item--ritual {
+//   position: absolute;
+//   top: 520px;
+// }
+
+// .types__item--wisper {
+//   position: absolute;
+//   top: 770px;
+// }
+
+// .types__item--old-house {
+//   position: absolute;
+//   top: 1010px;
+// }
+
+// .types__item--forest {
+//   position: absolute;
+//   top: 1230px;
+// }
+
+// .types__item--experiment {
+//   position: absolute;
+//   top: 1480px;
+// }
+
+// .types__item--metro {
+//   position: absolute;
+//   top: 1760px;
+// }
+
+// .types__item--old-top {
+//   position: absolute;
+//   top: 2010px;
+// }
+
+// .types__item--last-rubes {
+//   position: absolute;
+//   top: 2260px;
+// }
+
+// .types__item--mars {
+//   position: absolute;
+//   top: 2510px;
+// }
+
+.types__hit {
+  position: relative;
+  border: 2px solid rgba(242, 137, 15, 0.74);
+  border-radius: 50px;
+  width: 45px;
+  text-align: center;
+  margin-left: 228px;
+  font-size: 12px;
+  padding: 4px 0 2px 17px;
+  line-height: 18px;
+}
+
+.types__hit::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/star.svg") no-repeat 0 0;
+}
+
+.types__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  margin-top: 84px;
+}
+
+.types__adress {
+  position: relative;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 19px;
+  padding-left: 23px;
+}
+
+.types__adress::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  background: url("../img/location.svg") no-repeat 0 0;
+}
+
+.types__level {
+  position: relative;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 25px;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.types__level::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/person.svg") no-repeat 0 0;
+}
+
+.types__hard {
+  position: relative;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 35px;
+  margin-left: 11px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+
+.types__hard::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 11px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/puzzle.svg") no-repeat 0 0;
 }
 
 @media (min-width: @desktop-width) {
   .types__list{
-    width: 1080px;
+    width: 1180px;
   }
 
   .types__item {
-    width: 344px;
-    margin-right: 24px;
+    margin: 20px 39px 13px 0;
   }
 
   .types__item:nth-child(3n+3) {
     margin-right: 0;
+  }
+
+  .types__item img,
+  .types__shadow {
+    width: 344px;
+    height: 232px;
+  }
+
+  .types__hit {
+    margin-left: 242px;
   }
 }

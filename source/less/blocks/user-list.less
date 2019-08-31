@@ -1,9 +1,11 @@
 .user-list {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  margin-top: 31px;
 }
 
 .user-list li {
-  margin-bottom: 19px;
+  position: relative;
+  margin-bottom: 18px;
 }
 
 .user-list__link {
@@ -15,7 +17,7 @@
 .user-list__link::before {
   content: "";
   position: absolute;
-  left: 132px;
+  left: 103px;
   width: 30px;
   height: 30px;
   background: url("../img/navigation-map.svg") no-repeat 0 0;
@@ -31,6 +33,8 @@
     display: flex;
     justify-content: space-between;
     width: 260px;
+    border: none;
+    margin-top: 0;
     order: 2;
   }
 

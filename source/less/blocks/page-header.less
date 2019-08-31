@@ -52,13 +52,18 @@
 .page-header__load-nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: @desktop-width) {
+  .page-header__load-nav {
+    margin-bottom: 0;
+  }
+
   .page-header__wrapper {
     width: 1302px;
     padding: 0 32px;
+    height: 50px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;

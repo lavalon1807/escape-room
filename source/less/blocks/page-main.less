@@ -14,6 +14,21 @@
   display: flex;
 }
 
+.page-main__block-info {
+  color: #f2890f;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 0px;
+  padding-top: 3px;
+}
+
+.page-main__block-title {
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  padding-top: 10px;
+}
+
 @media (min-width: @desktop-width) {
   .page-main {
     width: 1302px;
@@ -27,6 +42,32 @@
   }
 
   .page-main__block {
+    position: relative;
     margin-left: 136px;
+  }
+
+  .page-main__block-info {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    color: #f2890f;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-main__block-title {
+    font-size: 64px;
+    line-height: 70px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-main__block-shadow {
+    width: 1080px;
+    height: 78px;
+    background: linear-gradient(180deg, rgba(19, 18, 18, 0) 0%, #131212 100%);
+    transform: rotate(180deg);
   }
 }

@@ -1,3 +1,178 @@
 .chronics__list {
+  position: relative;
   display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 9px;
+}
+
+.chronics__item {
+  padding-left: 30px;
+  height: 20px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  min-width: 80px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  padding-left: 54px;
+  padding-right: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  border-left: 1px solid rgba(255, 255, 255, 0.32);
+}
+
+.chronics__item:first-child {
+  border-bottom: 2px solid #f2890f;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  height: 20px;
+  margin-left: 30px;
+  margin-right: 14px;
+  border-left: none;
+}
+
+.chronics__item:nth-child(2) {
+  padding-left: 54px;
+  padding-right: 16px;
+}
+
+.chronics__item--all-quest::before {
+  content: "";
+  top: 44px;
+  left: 0px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../img/all-quest.svg") no-repeat 0 0;
+  background-size: 22px 24px;
+}
+
+.chronics__item--adventure::before {
+  content: "";
+  top: 45px;
+  left: 142px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../img/adventure.svg") no-repeat 0 0;
+  background-size: 27px 23px;
+}
+
+.chronics__item--horror {
+  margin-left: 15px;
+  padding-right: 0;
+}
+
+.chronics__item--horror::before {
+  content: "";
+  top: 45px;
+  left: 303px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../img/horror.svg") no-repeat 0 0;
+  background-size: 25px 25px;
+}
+
+.chronics__item--mistik {
+  padding-left: 50px;
+}
+
+.chronics__item--mistik::before {
+  content: "";
+  top: 45px;
+  left: 445px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../img/mistik.svg") no-repeat 0 0;
+  background-size: 25px 24px;
+}
+
+.chronics__item--detective::before {
+  content: "";
+  top: 45px;
+  left: 590px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../img/detective.svg") no-repeat 0 0;
+  background-size: 24px 24px;
+}
+
+.chronics__item--sci-fi::before {
+  content: "";
+  top: 45px;
+  left: 740px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../img/sci-fi.svg") no-repeat 0 0;
+  background-size: 25px 25px;
+}
+
+@media (min-width: @desktop-width) {
+  .chronics {
+    margin-top: 10px;
+  }
+
+  .chronics__item:first-child {
+    padding-bottom: 3px;
+    margin-left: 37px;
+  }
+
+  .chronics__item:nth-child(2) {
+    margin-left: 23px;
+    padding-left: 87px;
+    padding-right: 23px;
+  }
+
+  .chronics__item--all-quest::before {
+    background-size: 30px 30px;
+  }
+
+  .chronics__item--adventure::before {
+    background-size: 35px;
+    left: 195px;
+  }
+
+  .chronics__item--horror::before {
+    background-size: 30px;
+    left: 417px;
+  }
+
+  .chronics__item--horror {
+    padding-left: 81px;
+    padding-right: 5px;
+  }
+
+  .chronics__item--mistik {
+    padding-left: 80px;
+  }
+
+  .chronics__item--mistik::before {
+    background-size: 30px;
+    left: 584px;
+  }
+
+  .chronics__item--detective::before {
+    background-size: 40px;
+    left: 762px;
+  }
+
+  .chronics__item--detective {
+    padding-left: 90px;
+  }
+
+  .chronics__item--sci-fi::before {
+    background-size: 28px;
+    left: 957px;
+  }
+
+  .chronics__item--sci-fi {
+    padding-left: 80px;
+  }
 }

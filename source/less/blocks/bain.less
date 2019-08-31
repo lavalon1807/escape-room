@@ -36,18 +36,6 @@
   background: linear-gradient(163.84deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%);
 }
 
-
-// .bain__menu-open {
-//   position: absolute;
-//   width: 100%;
-//   min-height: 640px;
-//   background: linear-gradient(163.84deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%);
-//   background-repeat: no-repeat;
-//   background-position: 0 0;
-//   background-color: #fff;
-//   background-size: cover;
-// }
-
 @media (min-width: @desktop-width) {
   .bain {
     position: absolute;
@@ -70,5 +58,12 @@
     top: 0px;
     background: linear-gradient(274.19deg, rgba(99, 60, 15, 0.1) 35.91%, rgba(36, 21, 14, 0.4) 65.15%, #1A140D 98.48%);
     background-blend-mode: darken;
+  }
+
+  .bain__desktop--opened {
+    background-image:
+      radial-gradient(ellipse at 80% 40%, rgba(0, 0, 0, 0) 34.58%, rgba(0, 0, 0, 0.4) 40%),
+      url("../img/bg_img2.jpg");
+      background-size: cover;
   }
 }
