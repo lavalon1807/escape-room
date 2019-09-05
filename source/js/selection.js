@@ -4,17 +4,17 @@ var stats = document.querySelector('.stats');
 var footer = document.querySelector('.page-footer');
 var bain = document.querySelector('.bain');
 var bainDesktop = document.querySelector('.bain__desktop');
+var bainSelection = document.querySelector('.bain__selection');
 var divBain = document.querySelector('div');
+var main = document.querySelector('main');
 
 button.addEventListener('click', function () {
   if (mainNav.classList.contains('main-nav__closed')) {
-    divBain.classList.remove('bain');
+    main.classList.remove('bain__closed');
+    main.classList.add('bain__opened');
 
     mainNav.classList.remove('main-nav__closed');
     mainNav.classList.add('main-nav__opened');
-
-    stats.classList.add('stats__closed');
-    stats.classList.remove('stats__opened');
 
     footer.classList.remove('page-footer__closed');
     footer.classList.add('page-footer__opened');
@@ -26,13 +26,11 @@ button.addEventListener('click', function () {
     button.classList.add('page-header__toggle--opened');
 
   } else {
-    divBain.classList.add('bain');
+    main.classList.add('bain__closed');
+    main.classList.remove('bain__opened');
 
     mainNav.classList.add('main-nav__closed');
     mainNav.classList.remove('main-nav__opened');
-
-    stats.classList.remove('stats__closed');
-    stats.classList.add('stats__opened');
 
     footer.classList.add('page-footer__closed');
     footer.classList.remove('page-footer__opened');
@@ -44,4 +42,6 @@ button.addEventListener('click', function () {
     button.classList.remove('page-header__toggle--opened');
   }
 })
+
+
 

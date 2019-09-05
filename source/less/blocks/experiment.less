@@ -1,0 +1,153 @@
+.experiment__list {
+  display: flex;
+  justify-content: space-between;
+  width: 310px;
+  padding-left: 10px;
+}
+
+.experiment__stats {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color:  #f2890f;
+  margin-top: 264px;
+  margin-bottom: 0px;
+}
+
+.experiment__title {
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.experiment__item {
+  position: relative;
+  width: 72px;
+  text-align: center;
+  margin-top: 17px;
+  line-height: 17px;
+  font-size: 14px;
+}
+
+.experiment__item--time,
+.experiment__item--people,
+.experiment__item--level {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 23px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.experiment__item--time {
+  &::before {
+    border-right: 1px solid grey;
+    padding-right: 40px;
+    height: 48px;
+    background:
+      url("../img/clock.svg") no-repeat 0 0;
+  }
+}
+
+.experiment__item--people {
+  padding-left: 4px;
+  &::before {
+    border-right: 1px solid grey;
+    padding-right: 40px;
+    height: 48px;
+    left: 27px;
+    background:
+      url("../img/person.svg") no-repeat 0 0;
+  }
+}
+
+.experiment__item--level {
+  &::before {
+    background:
+      url("../img/puzzle.svg") no-repeat 0 0;
+    background-size: 25px;
+  }
+}
+
+.experiment__text {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 49px;
+  margin-top: 13px;
+}
+
+@media (min-width: @desktop-width) {
+  .experiment__stats {
+    margin-top: 67px;
+    margin-left: 3px;
+    margin-bottom: 22px;
+  }
+
+  .experiment__title {
+    font-size: 89px;
+    line-height: 87px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .experiment__list {
+    width: 420px;
+    margin-left: 31px;
+    margin-top: 12px;
+  }
+
+  .experiment__item--time {
+    padding-left: 22px;
+    padding-top: 4px;
+    &::before {
+      height: 36px;
+      padding-left: 34px;
+      top: 0;
+      left: 1px;
+    }
+  }
+
+  .experiment__item--people {
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-top: 4px;
+    &::before {
+      height: 36px;
+      padding-left: 32px;
+      top: 0;
+      left: -7px;
+    }
+  }
+
+  .experiment__item--level {
+    width: 140px;
+    padding-left: 24px;
+    padding-top: 4px;
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .experiment__text {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    width: 524px;
+    margin-top: 27px;
+    margin-left: 42px;
+    margin-bottom: 67px;
+  }
+
+  .experiment__text--wrap {
+    display: inline-block;
+    width: 160px;
+  }
+}

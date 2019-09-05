@@ -1,0 +1,153 @@
+.ritual__list {
+  display: flex;
+  justify-content: space-between;
+  width: 310px;
+  padding-left: 10px;
+}
+
+.ritual__stats {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color:  #f2890f;
+  margin-top: 288px;
+  margin-bottom: 0px;
+}
+
+.ritual__title {
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.ritual__item {
+  position: relative;
+  width: 72px;
+  text-align: center;
+  margin-top: 16px;
+  line-height: 17px;
+  font-size: 14px;
+}
+
+.ritual__item--time,
+.ritual__item--people,
+.ritual__item--level {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 23px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.ritual__item--time {
+  &::before {
+    border-right: 1px solid grey;
+    padding-right: 40px;
+    height: 48px;
+    background:
+      url("../img/clock.svg") no-repeat 0 0;
+  }
+}
+
+.ritual__item--people {
+  padding-left: 4px;
+  &::before {
+    border-right: 1px solid grey;
+    padding-right: 40px;
+    height: 48px;
+    left: 27px;
+    background:
+      url("../img/person.svg") no-repeat 0 0;
+  }
+}
+
+.ritual__item--level {
+  &::before {
+    background:
+      url("../img/puzzle.svg") no-repeat 0 0;
+    background-size: 25px;
+  }
+}
+
+.ritual__text {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 49px;
+  margin-top: 13px;
+}
+
+@media (min-width: @desktop-width) {
+  .ritual__stats {
+    margin-top: 86px;
+    margin-left: 3px;
+    margin-bottom: 22px;
+  }
+
+  .ritual__title {
+    font-size: 90px;
+    line-height: 87px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .ritual__list {
+    width: 420px;
+    margin-left: 25px;
+    margin-top: 12px;
+  }
+
+  .ritual__item--time {
+    padding-left: 22px;
+    padding-top: 4px;
+    &::before {
+      height: 36px;
+      padding-left: 34px;
+      top: 0;
+      left: 1px;
+    }
+  }
+
+  .ritual__item--people {
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-top: 4px;
+    &::before {
+      height: 36px;
+      padding-left: 32px;
+      top: 0;
+      left: -7px;
+    }
+  }
+
+  .ritual__item--level {
+    width: 140px;
+    padding-left: 24px;
+    padding-top: 4px;
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .ritual__text {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    width: 526px;
+    margin-top: 27px;
+    margin-left: 35px;
+    margin-bottom: 67px;
+  }
+
+  .ritual__text--wrap {
+    display: inline-block;
+    width: 160px;
+  }
+}

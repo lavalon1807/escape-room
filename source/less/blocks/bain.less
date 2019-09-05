@@ -1,22 +1,89 @@
-.bain{
-  position: absolute;
+.bain {
   width: 100%;
   min-height: 640px;
   background-image:
-    radial-gradient(ellipse at 70% 40%, rgba(0, 0, 0, 0) 30.58%, rgba(0, 0, 0, 0.4) 45%), url("../img/bg_imgMobile.jpg");
+    radial-gradient(ellipse at 70% 40%, rgba(0, 0, 0, 0) 30.58%, rgba(0, 0, 0, 0.4) 45%),
+    url("../img/bg_imgMobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: #fff;
   background-size: cover;
 }
 
+.bains {
+  position: absolute;
+  width: 100%;
+  height: 640px;
+  background-image:
+    radial-gradient(ellipse at 70% 40%, rgba(0, 0, 0, 0) 30.58%, rgba(0, 0, 0, 0.4) 45%),
+    url("../img/maniak-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #fff;
+  background-size: cover;
+}
+
+.bains-oldhome {
+  position: absolute;
+  width: 100%;
+  height: 640px;
+  background-image:
+    linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%),
+    url("../img/oldhome-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #fff;
+  background-size: cover;
+}
+
+.bains-ritual {
+  position: absolute;
+  width: 100%;
+  height: 640px;
+  background-image:
+    linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%),
+    url("../img/ritual-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #fff;
+  background-size: cover;
+}
+
+.bains-experiment {
+  position: absolute;
+  width: 100%;
+  height: 640px;
+  background-image:
+    linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%),
+    url("../img/experiment-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #fff;
+  background-size: cover;
+}
+
+.bains__maniak-order {
+  position: absolute;
+  width: 100%;
+  height: 640px;
+  background-image:
+    radial-gradient(159.39px at 32.45% 59.13%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 100%),
+    url("../img/order-mobile1.jpg");
+  background-repeat: no-repeat;
+  background-position: -60px -20px;
+  background-color: #fff;
+  background-size: 130%;
+}
+
+.bain__selection,
 .bain__desktop {
   position: absolute;
   width: 100%;
   min-height: 100%;
   left: 0px;
   top: 0px;
-  background: linear-gradient(170.19deg, rgba(99, 60, 15, 0.1) 35.91%, rgba(36, 21, 14, 0.4) 45.15%, #1A140D 98.48%);
+  background:
+    linear-gradient(170.19deg, rgba(99, 60, 15, 0.1) 35.91%, rgba(36, 21, 14, 0.4) 45.15%, #1A140D 98.48%);
   background-blend-mode: darken;
 }
 
@@ -36,6 +103,14 @@
   background: linear-gradient(163.84deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%);
 }
 
+.bain__selection--closed {
+  display: block;
+}
+
+.bain__selection--opened {
+  background: linear-gradient(163.84deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%);
+}
+
 @media (min-width: @desktop-width) {
   .bain {
     position: absolute;
@@ -47,6 +122,83 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: #000;
+    background-size: cover;
+  }
+
+  .bains {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:
+      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%),
+      url("../img/maniak-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #fff;
+    background-size: cover;
+  }
+
+  .bains-oldhome {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:
+      radial-gradient(ellipse at 70% 40%, rgba(0, 0, 0, 0) 30.58%, rgba(0, 0, 0, 0.4) 45%),
+      url("../img/oldhome.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #fff;
+    background-size: cover;
+  }
+
+  .bains-ritual {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background-image:
+      url("../img/ritual.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #000;
+    background-size: cover;
+  }
+
+  .bains-experiment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:
+      radial-gradient(ellipse at 70% 40%, rgba(0, 0, 0, 0) 30.58%, rgba(0, 0, 0, 0.4) 45%),
+      url("../img/experiment.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #fff;
+    background-size: cover;
+  }
+
+  .bain__maniak {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background-image:
+      radial-gradient(ellipse at 37% 50%, rgba(0, 0, 0, 0) 30.58%, rgba(0, 0, 0, 0.4) 45%),
+      url("../img/maniak-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #000;
+    background-size: cover;
+  }
+
+  .bains__maniak-order {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:
+      radial-gradient(159.39px at 32.45% 59.13%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 100%),
+      url("../img/order1.jpg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-color: #fff;
     background-size: cover;
   }
 
