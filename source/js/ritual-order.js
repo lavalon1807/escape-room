@@ -37,8 +37,6 @@ var paymentEnd = document.querySelector('.maniak-order__payment-end');
 
 button.addEventListener('click', function () {
   if (mainNav.classList.contains('main-nav__closed')) {
-    divBain.classList.remove('bains__maniak-order');
-
     main.classList.remove('bain__closed');
     main.classList.add('bain__opened');
 
@@ -55,8 +53,6 @@ button.addEventListener('click', function () {
     button.classList.add('page-header__toggle--opened');
 
   } else {
-    divBain.classList.add('bains__maniak-order');
-
     main.classList.add('bain__closed');
     main.classList.remove('bain__opened');
 

@@ -10,8 +10,12 @@
 
 .user-list__link {
   color: #f2890f;
-  padding-left: 24px;
+  margin-left: 24px;
   font-size: 15px;
+}
+
+.user-list__closed {
+  display: none;
 }
 
 .user-list__link::before {
@@ -23,9 +27,34 @@
   background: url("../img/navigation-map.svg") no-repeat 0 0;
 }
 
+.user-list__link--amur {
+  padding-left: 14px;
+}
+
+.user-list__link--amur::before {
+  content: "";
+  position: absolute;
+  left: 53px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/navigation-map.svg") no-repeat 0 0;
+}
+
+.user-list__link--nav-amur::before {
+  left: 64px;
+}
+
 .user-list__phone {
   font-size: 16px;
   padding-bottom: 18px;
+}
+
+.user-list__opened--ircutsk,
+.user-list__opened--smolensk,
+.user-list__opened--novosibirsk,
+.user-list__opened--volgograd,
+.user-list__opened--amur {
+  display: block;
 }
 
 @media (min-width: @desktop-width) {
@@ -47,7 +76,12 @@
     font-size: 12px;
     line-height: 14px;
     color: #f2890f;
-    padding-left: 13px;
+    margin-left: 13px;
+  }
+
+  .user-list__link:hover,
+  .user-list__link:active {
+    border-bottom: 1px dashed #f2890f;
   }
 
   .user-list__phone {

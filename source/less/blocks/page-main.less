@@ -18,11 +18,16 @@
 }
 
 .page-main__block-info {
+  display: flex;
   color: #f2890f;
   line-height: 20px;
   font-size: 14px;
   margin: 0px;
   padding-top: 3px;
+}
+
+.page-main__item {
+  padding-left: 7px;
 }
 
 .page-main__block-title {
@@ -40,6 +45,18 @@
   bottom: 0px;
   background:
     linear-gradient(177.83deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%);
+}
+
+.page-main__closed {
+  display: none;
+}
+
+.page-main__opened {
+  display: block;
+}
+
+.body-main__closed {
+  display: none;
 }
 
 @media (min-width: @desktop-width) {

@@ -12,3 +12,23 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+@media (min-width: @desktop-width) {
+  .social__question:hover,
+  .social__question:focus {
+    position: relative;
+    padding-left: 15px;
+    color: #F2890F;
+    border-color: #F2890F;
+  }
+
+  .social__question:hover::before,
+  .social__question:focus::before {
+    position: absolute;
+    content: "?";
+    top: 5px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+  }
+}

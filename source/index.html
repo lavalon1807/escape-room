@@ -28,7 +28,11 @@
                 <nav class="main-nav main-nav__closed">
                   <ul class="main-nav__list user-list">
                     <li>
-                      <a class="user-list__link" href="choose-city.html">новосибирск</a>
+                      <a class="user-list__link user-list__link--novosibirsk" href="#">Новосибирск</a>
+                      <a class="user-list__link user-list__link--ircutsk user-list__closed" href="#">Иркутск</a>
+                      <a class="user-list__link user-list__link--smolensk user-list__closed" href="#">Смоленск</a>
+                      <a class="user-list__link user-list__link--volgograd user-list__closed" href="#">Волгоград</a>
+                      <a class="user-list__link user-list__link--amur user-list__closed" href="#">Комсомольск-на-Амуре</a>
                     </li>
                     <li class="user-list__phone">
                       8 (383) 284 01 60
@@ -98,41 +102,55 @@
       </div>
     </div>
 
-
-    <section class="modal modal-city modal-city__show">
+    <section class="modal modal-city modal-city__closed">
       <div class="modal-city__wrapper">
+        <button class="closed-modal">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
         <h3 class="modal-city__title">Ваш город:</h3>
         <a class="modal-city__link" href="#">Определить местоположение</a>
         <p class="modal-city__info">... или выберите вручную</p>
-        <ul class="modal-city__list">
-          <li class="modal-city__item">Новосибирск</li>
-          <li class="modal-city__item">Иркутск</li>
-          <li class="modal-city__item--choose">Смоленск</li>
-          <li class="modal-city__item">Волгоград</li>
-          <li class="modal-city__item">Комсомольск-на-Амуре</li>
-        </ul>
+        <div class="qqq-1">
+          <input type="radio" name="city" class="visually-hidden" id="city1" checked>
+          <input type="radio" name="city" class="visually-hidden" id="city2">
+          <input type="radio" name="city" class="visually-hidden" id="city3">
+          <input type="radio" name="city" class="visually-hidden" id="city4">
+          <input type="radio" name="city" class="visually-hidden" id="city5">
+          <div class="fff">
+            <label class="eee eee__1" for="city1">Новосибирск</label>
+            <label  class="eee eee__2" for="city2">Иркутск</label>
+            <label  class="eee eee__3" for="city3">Смоленск</label>
+            <label  class="eee eee__4" for="city4">Волгоград</label>
+            <label  class="eee eee__5" for="city5">Комсомольск-на-Амуре</label>
+        </div>
       </div>
     </section>
 
-    <section class="modal modal-question modal-question__show">
+    <section class="modal modal-question modal-city__closed">
       <div class="modal-question__wrapper">
+        <button class="modal-question__closed">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
         <h3 class="modal-question__title">Задайте вопрос</h3>
-        <form method="post">
-          <div>
-            <p>Чтобы мы смогли обращаться к вам, оставьте ваше имя</p>
-            <input type="text" name="name" placeholder="Имя">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal-question__form-name">
+            <p class="modal-question__name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</p>
+            <p class="modal-question__description-1">Имя</p>
+            <input class="modal-question__input" type="text" name="name" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]{6,}">
+          </div>
+          <div class="modal-question__form-mail">
+            <p class="modal-question__email">Чтобы вы получили ответ, оставьте ваш e-mail</p>
+            <p class="modal-question__description-2">E-mail</p>
+            <input class="modal-question__input" type="email" name="e-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Email">
           </div>
           <div>
-            <p>Чтобы вы получили ответ, оставьте ваш e-mail</p>
-            <input type="email" name="e-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="E-mail">
+            <p class="modal-question__our-question">Ваш вопрос:</p>
+            <textarea class="modal-question__comments" rows="5" placeholder="Начните вводить ..."></textarea>
           </div>
-          <div>
-            <p>Ваш вопрос:</p>
-            <textarea rows="7" placeholder="Начните вводить ..."></textarea>
-          </div>
-          <button class="" type="submit">Отправить вопрос</button>
-          <div>
-            <input type="checkbox">Я согласен с правилами обработки персональных данных и пользовательским соглашением
+          <button class="button modal-question__button" disabled id="submit" type="submit">Отправить вопрос</button>
+          <div class="modal-question__rule">
+            <input class="visually-hidden modal-question__checkbox" type="checkbox" id="rule">Я согласен с <a class="modal-question__do" href="#">правилами обработки</a> <a class="modal-question__do" href="#">персональных данных</a> и пользовательским соглашением
+            <label for="rule"></label>
           </div>
         </form>
       </div>
